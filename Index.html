@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kannan_S_Resume</title>
+  <!-- simple readable font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Basic page styling */
+body {
+  margin: 0;
+  font-family: 'Nunito', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+  padding: 36px 24px;
+}
+
+/* Page layout: left column (profile) + right column (content) */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
+}
+
+/* Profile section */
+.label {
+  font-weight: bolder;
+  color: #6b9ebc;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  color: #1687a7;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact {
+  font-weight: bolder;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #33475b;
+}
+
+.contact a {
+  color: #1687a7;
+  text-decoration: none;
+}
+
+/* Content headings and paragraphs */
+.content h2 {
+  color: #1687a7;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.content p {
+  margin: 0 0 12px;
+}
+
+/* Lists */
+ul { padding-left: 18px; margin: 8px 0 18px; }
+ul li { margin-bottom: 14px; }
+ul.years > li { margin-bottom: 18px; }
+ul.years li ul { list-style: circle; margin-top: 8px; }
+
+/* Muted text */
+.muted { color: #333; }
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  left: 14px;
+  top: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  background: #fff;
+  color: #000;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Remove underline for blue elements */
+a,
+h1,
+.content h2,
+.label {
+  text-decoration: none;
+}
+a:hover,
+h1:hover,
+.content h2:hover,
+.label:hover {
+  text-decoration: none;
+}
+
+/* Dark mode */
+html.dark body { background: #121212; color: #e6eef3; }
+html.dark a,
+html.dark h1,
+html.dark .content h2,
+html.dark .label {
+  color: #0e7490 !important; /* dark teal-blue */
+}
+html.dark .theme-toggle {
+  background: #000;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+html.dark .resume-btn {
+  color: #fff !important;
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .container { grid-template-columns: 1fr; padding: 24px; }
+  .avatar { max-width: 260px; }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Theme toggle (visible top-left). JS toggles .dark on <html>. -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+    <!-- We'll swap the SVG inside with JS for moon/sun -->
+    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></svg>
+  </button>
+
+  <main class="container">
+
+    <!-- LEFT: profile card -->
+    <aside class="profile">
+      <div class="label">Profile :)</div>
+      <h1>Kannan S!</h1>
+
+      <!-- replace profile.jpg with your image file in same folder -->
+      <img src="https://github.com/Kannan-Sureshsasi/Digital-Clock/assets/138990724/ff7c62c8-10d0-4723-abfb-442d8b9bed00" alt="Kannan" class="avatar">
+
+      <p class="contact">Contact: <a href="mailto:kannan.sureshsasi.com">kannan.sureshsasi@gmail.com</a><br>
+        <a href="https://www.linkedin.com/in/kannan-suresh/">LinkedIn</a> | <a href="https://github.com/Kannan-Sureshsasi">GitHub</a> | <a href="https://www.hackerrank.com/profile/Kannan_Suresh">HackerRank</a></p>
+    </aside>
+
+    <!-- RIGHT: main content (matches the right-side screenshots) -->
+    <section class="content">
+
+      <h2>About Me!</h2>
+         <p>Hi, I'm Kannan👋, An aspiring IT professional with a passion for building and improving applications. I’m also deeply interested in software testing 🛠️, ensuring every project is reliable, user-friendly applications while constantly learning and growing in the tech field.</p>
+
+      <h2>What I Know:</h2>
+      <ul>
+        <li><strong>Development:</strong> Skilled in C#, ASP.NET, and SQL Server for building robust and scalable applications.</li>
+        <li><strong>Web Development:</strong> Experience in creating interactive and responsive front-end interfaces, integrating them with secure back-end systems.</li>
+        <li><strong>Software Testing:</strong> Strong interest in ensuring quality and reliability through effective testing practices.</li>
+        <li><strong>Tools & Platforms:</strong> Familiar with Git, GitHub, and Visual Studio for efficient development and collaboration.</li>
+
+      </ul>
+
+      <h2>Education:</h2>
+      <ul class="years">
+        <li>
+          <strong>2014–2026</strong>
+          <ul>
+            <li>Asan Memorial College of Arts and Science</li>
+            <li>Madras University</li>
+            <li>Master of Computer Applications</li>
+            <li>Percentage: %</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>2019–2022</strong>
+          <ul>
+            <li>Mohamed Sathak College of Arts and Science</li>
+            <li>Madras University</li>
+            <li>Bachelor of Commerce</li>
+            <li>Percentage: 68%</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>2017–2019</strong>
+          <ul>
+            <li>Evaans Matriculation Higher Secondary School</li>
+            <li>State Board - Higher Secondary</li>
+            <li>Percentage: 48%</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Projects:</h2>
+      <ul class="projects">
+        <li><strong>MAY 2023</strong> · <a href="#" style="color:#1687a7">Vehicle number plate detection using DL</a>. A deep learning module used for recognizing vehicle number plates and comparing trained data in PyTorch & TensorFlow for real-time recognition.</li>
+
+       <li><strong>2023</strong> · <a href="#" style="color:#1687a7">Movie Ticket Booking System</a>. Developed a movie ticket booking system in C# and ASP.NET, implemented in Visual Studio 2019. Integrated front-end and back-end for smooth ticket selection and booking, with SQL Server for secure transactions and efficient seat management.</li>
+
+       <li><strong>2023</strong> · <a href="#" style="color:#1687a7">E-Commerce System</a>. Part of a two-member front-end team for an online shopping website built in C# and ASP.NET. Implemented in Visual Studio 2019 with SQL Server as the back-end for product management and order processing.</li>
+      </ul>
+
+      <h2>Activities:</h2>
+      <ul class="activities">
+        <li>MAY 2020 · Developing and maintaining the website <a href="#" style="color:#1687a7">CubeXalphA</a> — review of tech gadgets.</li>
+        <li>2023 – Present · Pursuing MCA with a focus on software development, testing, and modern IT tools.</li>
+        <li>2024 · Actively engage in coding on platforms like Hacker Rank to enhance my coding skills.</li>
+        <li>2023 · Participated in the JP Morgan Magic Bus Livelihood Program for three months.</li>
+      </ul>
+
+      <p class="muted">Thanks for scrolling!</p>
+      <p class="muted">
+       <a href="https://drive.google.com/file/d/1ACsrE_fyvBZ0k_AuKJ2NiqmDuhFxLZOS/view?pli=1" download 
+        class="resume-btn"
+        style="display:inline-block; padding:6px 8px; font-size:10px; font-weight:bold; border-radius:4px; background:#1687a7; color:#fff; text-decoration:none;">
+        📄 Download Resume
+       </a>
+      </p>
+      <p class="muted"><a href="https://www.linkedin.com/in/kannan-suresh/">Contact Me!</a></p>
+    </section>
+  </main>
+
+  <script>
+    const html = document.documentElement;
+const btn = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
+
+if (localStorage.theme === "dark") html.classList.add("dark");
+
+function setIcon() {
+  icon.innerHTML = html.classList.contains("dark")
+    ? `<path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4M12 7a5 5 0 100 10 5 5 0 000-10z"/>`
+    : `<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>`;
+}
+
+btn.onclick = () => {
+  html.classList.toggle("dark");
+  localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
+  setIcon();
+};
+
+document.onkeydown = e => e.key.toLowerCase() === "t" && btn.click();
+
+setIcon();
+
+  </script>
+</body>
+</html>
