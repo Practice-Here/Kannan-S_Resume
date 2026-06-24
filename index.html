@@ -48,6 +48,28 @@ h1 {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
+ul.years ul li:first-child {
+  font-weight: 700;
+  color: #1687a7;
+  font-size: 15px; /* Slightly larger to anchor the section */
+}
+
+.resume-btn {
+  display: inline-block; 
+  padding: 6px 8px; 
+  font-size: 10px; 
+  font-weight: bold; 
+  border-radius: 4px; 
+  background: #1687a7; 
+  color: #fff !important; 
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.resume-btn:hover {
+  background: black;
+}
+
 .contact {
   font-weight: bolder;
   margin-top: 14px;
@@ -103,7 +125,7 @@ ul.years li ul { list-style: circle; margin-top: 8px; }
   height: 20px;
 }
 
-/* Remove underline for blue elements */
+
 a,
 h1,
 .content h2,
@@ -123,8 +145,19 @@ html.dark a,
 html.dark h1,
 html.dark .content h2,
 html.dark .label {
-  color: #0e7490 !important; /* dark teal-blue */
+  color: #0e7490 !important; 
 }
+html.dark .contact {
+  color: #e6eef3;
+}
+html.dark .muted {
+  color: #8da2b5;
+}
+
+html.dark ul.years ul li:first-child {
+  color: #0e7490 !important;
+}
+
 html.dark .theme-toggle {
   background: #000;
   color: #fff;
@@ -133,7 +166,12 @@ html.dark .theme-toggle {
 }
 
 html.dark .resume-btn {
-  color: #fff !important;
+  background: #4ec3e6;    
+  color: #121212 !important;
+}
+
+html.dark .resume-btn:hover {
+  background: gray;
 }
 
 /* Responsive for small screens */
@@ -158,37 +196,38 @@ html.dark .resume-btn {
       <div class="label">Profile :)</div>
       <h1>Kannan S!</h1>
 
-      <!-- replace profile.jpg with your image file in same folder -->
-      <img src="https://github.com/Kannan-Sureshsasi/Digital-Clock/assets/138990724/ff7c62c8-10d0-4723-abfb-442d8b9bed00" alt="Kannan" class="avatar">
+      <img src="Kannan Image.jpg" alt="Kannan" class="avatar">
 
-      <p class="contact">Contact: <a href="mailto:kannan.sureshsasi.com">kannan.sureshsasi@gmail.com</a><br>
-        <a href="https://www.linkedin.com/in/kannan-suresh/">LinkedIn</a> | <a href="https://github.com/Kannan-Sureshsasi">GitHub</a> | <a href="https://www.hackerrank.com/profile/Kannan_Suresh">HackerRank</a></p>
+      <p class="contact">Contact: <a href="mailto:kannan.sureshsasi@gmail.com">kannan.sureshsasi@gmail.com</a><br>
+        <a href="https://www.linkedin.com/in/kannan-suresh/">LinkedIn</a> | 
+        <a href="https://github.com/Kannan-Sureshsasi">GitHub</a> | 
+        <a href="https://www.hackerrank.com/profile/Kannan_Suresh">HackerRank</a> | 
+        <a href="https://drive.google.com/file/d/1ACsrE_fyvBZ0k_AuKJ2NiqmDuhFxLZOS/view?pli=1">Resume</a>
+      </p>
     </aside>
 
     <!-- RIGHT: main content (matches the right-side screenshots) -->
     <section class="content">
 
       <h2>About Me!</h2>
-         <p>Hi, I'm Kannan👋, An aspiring IT professional with a passion for building and improving applications. I’m also deeply interested in software testing 🛠️, ensuring every project is reliable, user-friendly applications while constantly learning and growing in the tech field.</p>
+         <p>Hi, I'm Kannan👋. I have a development foundation through hands-on training and projects, and I'm currently self-learning software testing—Playwright, Selenium, Java, and API testing. I like understanding both how software is built and how it should be verified. Open to QA roles—manual ✍️ and automation 🤖.</p>
 
       <h2>What I Know:</h2>
       <ul>
-        <li><strong>Development:</strong> Skilled in C#, ASP.NET, and SQL Server for building robust and scalable applications.</li>
-        <li><strong>Web Development:</strong> Experience in creating interactive and responsive front-end interfaces, integrating them with secure back-end systems.</li>
-        <li><strong>Software Testing:</strong> Strong interest in ensuring quality and reliability through effective testing practices.</li>
-        <li><strong>Tools & Platforms:</strong> Familiar with Git, GitHub, and Visual Studio for efficient development and collaboration.</li>
-
+        <li><strong>Software Testing:</strong> Currently focused on Playwright, Selenium, Java, and API testing — building effective testing practices along the way.</li>
+        <li><strong>Development:</strong> HTML, CSS, JavaScript, C#, ASP.NET, and SQL Server for building full web applications, from front-end interfaces to back-end logic and database design.</li>
+        <li><strong>Tools & Platforms:</strong> Git, GitHub, and Visual Studio for version control and day-to-day efficient development.</li>
       </ul>
 
       <h2>Education:</h2>
       <ul class="years">
         <li>
-          <strong>2014–2026</strong>
+          <strong>2024–2026</strong>
           <ul>
             <li>Asan Memorial College of Arts and Science</li>
             <li>Madras University</li>
-            <li>Master of Computer Applications</li>
-            <li>Percentage: %</li>
+            <li>Master of Computer Applications (MCA)</li>
+            <li>Percentage: 78%</li>
           </ul>
         </li>
 
@@ -197,7 +236,7 @@ html.dark .resume-btn {
           <ul>
             <li>Mohamed Sathak College of Arts and Science</li>
             <li>Madras University</li>
-            <li>Bachelor of Commerce</li>
+            <li>Bachelor of Commerce (B.Com)</li>
             <li>Percentage: 68%</li>
           </ul>
         </li>
@@ -206,7 +245,7 @@ html.dark .resume-btn {
           <strong>2017–2019</strong>
           <ul>
             <li>Evaans Matriculation Higher Secondary School</li>
-            <li>State Board - Higher Secondary</li>
+            <li>State Board - HSC</li>
             <li>Percentage: 48%</li>
           </ul>
         </li>
@@ -214,8 +253,6 @@ html.dark .resume-btn {
 
       <h2>Projects:</h2>
       <ul class="projects">
-        <li><strong>MAY 2023</strong> · <a href="#" style="color:#1687a7">Vehicle number plate detection using DL</a>. A deep learning module used for recognizing vehicle number plates and comparing trained data in PyTorch & TensorFlow for real-time recognition.</li>
-
        <li><strong>2023</strong> · <a href="#" style="color:#1687a7">Movie Ticket Booking System</a>. Developed a movie ticket booking system in C# and ASP.NET, implemented in Visual Studio 2019. Integrated front-end and back-end for smooth ticket selection and booking, with SQL Server for secure transactions and efficient seat management.</li>
 
        <li><strong>2023</strong> · <a href="#" style="color:#1687a7">E-Commerce System</a>. Part of a two-member front-end team for an online shopping website built in C# and ASP.NET. Implemented in Visual Studio 2019 with SQL Server as the back-end for product management and order processing.</li>
@@ -223,26 +260,21 @@ html.dark .resume-btn {
 
       <h2>Activities:</h2>
       <ul class="activities">
-        <li>MAY 2020 · Developing and maintaining the website <a href="#" style="color:#1687a7">CubeXalphA</a> — review of tech gadgets.</li>
-        <li>2023 – Present · Pursuing MCA with a focus on software development, testing, and modern IT tools.</li>
-        <li>2024 · Actively engage in coding on platforms like Hacker Rank to enhance my coding skills.</li>
+        <li>2026 – Present · Self-learning software testing through YouTube and online resources, focusing on playwright, Selenium, Java, and API testing.</li>
+        <li>2024 · Actively engage in coding on platforms like Hacker Rank to strengthen problem-solving skills.</li>
         <li>2023 · Participated in the JP Morgan Magic Bus Livelihood Program for three months.</li>
       </ul>
 
       <p class="muted">Thanks for scrolling!</p>
       <p class="muted">
-       <a href="https://drive.google.com/file/d/1ACsrE_fyvBZ0k_AuKJ2NiqmDuhFxLZOS/view?pli=1" download 
-        class="resume-btn"
-        style="display:inline-block; padding:6px 8px; font-size:10px; font-weight:bold; border-radius:4px; background:#1687a7; color:#fff; text-decoration:none;">
-        📄 Download Resume
-       </a>
+       <a href="https://drive.google.com/file/d/1ACsrE_fyvBZ0k_AuKJ2NiqmDuhFxLZOS/view?pli=1" download class="resume-btn"> 📄 Download Resume ⬇</a>
       </p>
-      <p class="muted"><a href="https://www.linkedin.com/in/kannan-suresh/">Contact Me!</a></p>
+      <p class="muted"><a href="https://www.linkedin.com/in/kannan-suresh/">Contact Me ⌯⌲</a></p>
     </section>
   </main>
 
-  <script>
-    const html = document.documentElement;
+<script>
+const html = document.documentElement;
 const btn = document.getElementById("themeToggle");
 const icon = document.getElementById("themeIcon");
 
@@ -259,11 +291,9 @@ btn.onclick = () => {
   localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
   setIcon();
 };
-
 document.onkeydown = e => e.key.toLowerCase() === "t" && btn.click();
-
 setIcon();
-
-  </script>
+</script>
+  
 </body>
 </html>
