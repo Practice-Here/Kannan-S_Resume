@@ -291,6 +291,7 @@ btn.onclick = () => {
   localStorage.theme = html.classList.contains("dark") ? "dark" : "light";
   setIcon();
 };
+
 document.onkeydown = e => e.key.toLowerCase() === "t" && btn.click();
 setIcon();
 </script>
