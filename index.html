@@ -295,6 +295,11 @@ btn.onclick = () => {
 document.onkeydown = e => e.key.toLowerCase() === "t" && btn.click();
 setIcon();
 </script>
+<script>
+    document.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+    });
+</script>
   
 </body>
 </html>
