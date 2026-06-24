@@ -295,27 +295,6 @@ btn.onclick = () => {
 document.onkeydown = e => e.key.toLowerCase() === "t" && btn.click();
 setIcon();
 </script>
-<script>
-    // 1. Completely disable right-click context menu
-  document.addEventListener("contextmenu", (event) => {
-    event.preventDefault();
-  }, true);
-
-  // 2. Disable text selection/copy shortcuts (Ctrl+C, Ctrl+U, F12 inspect element)
-  document.addEventListener("keydown", (event) => {
-    if (
-      event.ctrlKey && 
-      (event.key.toLowerCase() === 'c' || 
-       event.key.toLowerCase() === 'u' || 
-       event.key.toLowerCase() === 'i')
-    ) {
-      event.preventDefault();
-    }
-    if (event.key === "F12") {
-      event.preventDefault();
-    }
-  });
-</script>
   
 </body>
 </html>
